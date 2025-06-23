@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상담문의 - KDP 아카데미</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 상담신청 고정 버튼 -->
+    <div class="fixed-consult-btn">
+        <a href="education-apply.html" class="consult-btn">상담신청</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>KDP Academy</h1>
+                <span>Defense & Security Education Platform</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="about.html">아카데미 소개</a></li>
+                    <li><a href="courses.html">교육 과정</a></li>
+                    <li><a href="education-apply.html">교육 신청</a></li>
+                    <li><a href="instructors.html">강사진</a></li>
+                    <li><a href="notices.html">공지사항</a></li>
+                    <li><a href="contact.html" class="active">상담문의</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>상담문의</h1>
+                <p>KDP 아카데미에 대한 궁금한 사항을 언제든지 문의해주세요</p>
+            </div>
+
+            <!-- Contact Container -->
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>연락처 정보</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>주소</h4>
+                            <p>서울특별시 강남구 테헤란로 123<br>KDP 아카데미 빌딩 5층</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>전화번호</h4>
+                            <p>02-123-4567<br>평일 09:00 ~ 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4>이메일</h4>
+                            <p>info@kdpacademy.kr<br>24시간 접수 가능</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h4>운영시간</h4>
+                            <p>평일: 09:00 ~ 18:00<br>
+                               토요일: 09:00 ~ 15:00<br>
+                               일요일/공휴일: 휴무</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Contact -->
+                    <div class="quick-contact">
+                        <h4>빠른 상담</h4>
+                        <div class="quick-buttons">
+                            <a href="tel:02-123-4567" class="quick-btn phone">
+                                📞 전화상담
+                            </a>
+                            <a href="mailto:info@kdpacademy.kr" class="quick-btn email">
+                                ✉️ 이메일 문의
+                            </a>
+                            <a href="education-apply.html" class="quick-btn apply">
+                                📝 교육신청
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Container -->
+                <div class="map-container">
+                    <h3>오시는 길</h3>
+                    <div class="map-placeholder">
+                        🗺️ Google Map<br>
+                        (서울특별시 강남구 테헤란로 123)
+                        <p style="margin-top: 20px; font-size: 14px; color: #666;">
+                            지하철: 2호선 강남역 3번 출구에서 도보 5분<br>
+                            버스: 146, 240, 401, 462번 등<br>
+                            주차: 건물 지하 1-3층 주차장 이용
+                        </p>
+                    </div>
+                    
+                    <!-- 실제 Google Map 연동 시 사용할 코드 -->
+                    <!-- 
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2518!2d127.027583!3d37.49794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca159c778b2cd%3A0x823d5b9b35120c3c!2z6rCV64Ko6rWsIOyYqSDthYztq4jssoztronrpqwgMTIz!5e0!3m2!1sko!2skr!4v1609459200000!5m2!1sko!2skr" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    -->
+                </div>
+            </div>
+
+            <!-- Contact Form Section -->
+            <section class="contact-form-section">
+                <h2>온라인 문의</h2>
+                <div class="form-container">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">이름 *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">연락처 *</label>
+                                <input type="tel" id="contact-phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">이메일 *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiry-type">문의 유형</label>
+                            <select id="inquiry-type" name="inquiry-type">
+                                <option value="">선택해주세요</option>
+                                <option value="course">교육 과정 문의</option>
+                                <option value="registration">수강 신청 문의</option>
+                                <option value="payment">결제 관련 문의</option>
+                                <option value="technical">기술 지원</option>
+                                <option value="partnership">제휴 제안</option>
+                                <option value="other">기타 문의</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">제목 *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">문의 내용 *</label>
+                            <textarea id="contact-message" name="message" rows="6" required placeholder="문의하실 내용을 자세히 작성해주세요"></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="agree-privacy" required>
+                                <span class="checkmark"></span>
+                                개인정보 수집 및 이용에 동의합니다 *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">문의하기</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <h2>자주 묻는 질문</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>상담은 언제까지 가능한가요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>평일 09:00~18:00, 토요일 09:00~15:00까지 전화상담이 가능하며, 온라인 문의는 24시간 접수 가능합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>교육비 결제 방법은 어떻게 되나요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>신용카드, 계좌이체, 무통장입금이 가능하며, 기업 연수의 경우 세금계산서 발행도 가능합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>교육 과정 변경이나 환불이 가능한가요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>교육 시작 전까지는 100% 환불 가능하며, 시작 후에는 소비자보호법에 따라 환불 처리됩니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>기업 단체 교육도 가능한가요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>네, 10명 이상의 기업 단체 교육이 가능하며, 맞춤형 커리큘럼과 특별 할인 혜택을 제공합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Emergency Contact -->
+            <section class="emergency-contact">
+                <h2>긴급 연락처</h2>
+                <div class="emergency-info">
+                    <div class="emergency-item">
+                        <h4>교육 운영팀</h4>
+                        <p>📞 02-123-4567 (내선 101)<br>
+                           수업 관련 긴급 상황 시</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h4>기술 지원팀</h4>
+                        <p>📞 02-123-4567 (내선 102)<br>
+                           온라인 플랫폼 접속 오류 시</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h4>상담팀</h4>
+                        <p>📞 02-123-4567 (내선 103)<br>
+                           일반 문의 및 상담</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>KDP Academy</h4>
+                    <p>국방 및 치안 산업 교육 플랫폼</p>
+                    <p>Defense & Security Education Platform</p>
+                </div>
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <p>📍 서울특별시 강남구 테헤란로 123</p>
+                    <p>📞 02-123-4567</p>
+                    <p>✉️ info@kdpacademy.kr</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">아카데미 소개</a></li>
+                        <li><a href="courses.html">교육 과정</a></li>
+                        <li><a href="education-apply.html">교육 신청</a></li>
+                        <li><a href="contact.html">상담문의</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KDP Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ 토글 기능
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const toggle = question.querySelector('.faq-toggle');
+                
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.display = 'block';
+                    toggle.textContent = '-';
+                } else {
+                    answer.style.display = 'none';
+                    toggle.textContent = '+';
+                }
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('문의가 접수되었습니다. 빠른 시일 내에 답변드리겠습니다.');
+            this.reset();
+        });
+    </script>
+</body>
+</html> 

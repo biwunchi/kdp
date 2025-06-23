@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교육 신청 - KDP 아카데미</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 상담신청 고정 버튼 -->
+    <div class="fixed-consult-btn">
+        <a href="education-apply.html" class="consult-btn">상담신청</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>KDP Academy</h1>
+                <span>Defense & Security Education Platform</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="about.html">아카데미 소개</a></li>
+                    <li><a href="courses.html">교육 과정</a></li>
+                    <li><a href="education-apply.html" class="active">교육 신청</a></li>
+                    <li><a href="instructors.html">강사진</a></li>
+                    <li><a href="notices.html">공지사항</a></li>
+                    <li><a href="contact.html">상담문의</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>교육 신청</h1>
+                <p>개인 맞춤형 상담을 통해 최적의 교육 과정을 안내해드립니다</p>
+            </div>
+
+            <!-- Success Message -->
+            <div class="success-message" id="successMessage">
+                신청이 완료되었습니다. 빠른 시일 내에 연락드리겠습니다.
+            </div>
+
+            <!-- Application Form -->
+            <div class="form-container">
+                <form id="applicationForm">
+                    <div class="form-group">
+                        <label for="name">이름 *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="organization">소속 *</label>
+                        <input type="text" id="organization" name="organization" placeholder="회사명, 기관명 등" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">연락처 *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">이메일 *</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">관심 있는 과정 *</label>
+                        <select id="course" name="course" required>
+                            <option value="">선택해주세요</option>
+                            <option value="agile">Agile 워크샵</option>
+                            <option value="ai-agent">AI Agent 개발 실무</option>
+                            <option value="ai-robot">AI + 로봇 융합</option>
+                            <option value="vibe-coding">바이브 코딩</option>
+                            <option value="generative-ai">생성형 AI 활용</option>
+                            <option value="defense-security">국방 구매 및 치안 산업 특화 교육</option>
+                            <option value="consultation">상담 후 결정</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">관련 경험/배경</label>
+                        <select id="experience" name="experience">
+                            <option value="">선택해주세요</option>
+                            <option value="beginner">초보자 (관련 경험 없음)</option>
+                            <option value="basic">기초 수준 (1-2년 경험)</option>
+                            <option value="intermediate">중급 수준 (3-5년 경험)</option>
+                            <option value="advanced">고급 수준 (5년 이상 경험)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goals">교육 목표</label>
+                        <textarea id="goals" name="goals" placeholder="교육을 통해 달성하고자 하는 목표나 기대사항을 작성해주세요"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">상담 요청 내용 *</label>
+                        <textarea id="message" name="message" placeholder="궁금한 사항이나 특별히 상담받고 싶은 내용을 자유롭게 작성해주세요" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-time">연락 가능 시간</label>
+                        <select id="contact-time" name="contact-time">
+                            <option value="">선택해주세요</option>
+                            <option value="morning">오전 (09:00-12:00)</option>
+                            <option value="afternoon">오후 (13:00-18:00)</option>
+                            <option value="evening">저녁 (18:00-21:00)</option>
+                            <option value="anytime">언제든지</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="agree-privacy" required>
+                            <span class="checkmark"></span>
+                            개인정보 수집 및 이용에 동의합니다 *
+                        </label>
+                        <p class="privacy-text">
+                            수집 목적: 교육 상담 및 서비스 제공<br>
+                            수집 항목: 이름, 연락처, 이메일, 소속<br>
+                            보유 기간: 상담 완료 후 1년
+                        </p>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="agree-marketing">
+                            <span class="checkmark"></span>
+                            마케팅 정보 수신에 동의합니다 (선택)
+                        </label>
+                        <p class="privacy-text">
+                            새로운 교육 과정, 특별 혜택 등의 정보를 이메일/SMS로 받아보실 수 있습니다.
+                        </p>
+                    </div>
+
+                    <button type="submit" class="submit-btn">신청하기</button>
+                </form>
+            </div>
+
+            <!-- Process Info -->
+            <section class="process-info">
+                <h2>신청 절차</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>온라인 신청</h3>
+                        <p>신청서 작성 및 제출</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>상담 연락</h3>
+                        <p>1-2일 내 전화 상담</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>과정 추천</h3>
+                        <p>맞춤형 교육 과정 안내</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>등록 완료</h3>
+                        <p>교육비 결제 및 등록</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="faq-section">
+                <h2>자주 묻는 질문</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>교육 과정은 얼마나 걸리나요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>과정에 따라 다르며, 3주부터 12주까지 다양합니다. 주 2-3회, 회당 3-4시간 진행됩니다.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>교육비는 얼마인가요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>과정별로 상이하며, 상담 시 정확한 금액을 안내해드립니다. 기업 연수 및 단체 할인 혜택도 제공됩니다.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>온라인 수업도 가능한가요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>네, 대부분의 과정은 온라인/오프라인 모두 가능합니다. 상황에 따라 블렌디드 러닝도 제공됩니다.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>수료증이 발급되나요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>과정을 80% 이상 출석하고 평가를 통과하시면 KDP 아카데미 공식 수료증을 발급해드립니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>KDP Academy</h4>
+                    <p>국방 및 치안 산업 교육 플랫폼</p>
+                    <p>Defense & Security Education Platform</p>
+                </div>
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <p>📍 서울특별시 강남구 테헤란로 123</p>
+                    <p>📞 02-123-4567</p>
+                    <p>✉️ info@kdpacademy.kr</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">아카데미 소개</a></li>
+                        <li><a href="courses.html">교육 과정</a></li>
+                        <li><a href="education-apply.html">교육 신청</a></li>
+                        <li><a href="contact.html">상담문의</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KDP Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ 토글 기능
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const toggle = question.querySelector('.faq-toggle');
+                
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.display = 'block';
+                    toggle.textContent = '-';
+                } else {
+                    answer.style.display = 'none';
+                    toggle.textContent = '+';
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
